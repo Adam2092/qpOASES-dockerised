@@ -9,7 +9,7 @@ Isolate [qpOASES](https://projects.coin-or.org/qpOASES) into a pre-compiled dock
 - Separate qpOASES code out of the build tree of further programs and applications
 - Avoid unnecessarily repeating compiling of qpOASES
 
-###Procedure of Usage###
+### Procedure of Usage ###
 
 1. (Optional) update qpOASES (currently v3.2.1 is used) and/or Alpine image (currently v3.10.2 is used).
 	- By default, an image of alpine:3.10.2 of ~5.58MB is pulled automatically when the builder image is generated for the first time.
@@ -31,5 +31,5 @@ Isolate [qpOASES](https://projects.coin-or.org/qpOASES) into a pre-compiled dock
 	- Line 3 and 4 in `Dockerfile` indicate that only `CMakeLists.txt` and the files in `src` will be sent to the command `$ docker build` i.e. qpOASES is excluded in this procedure.
 	- Modify  `Dockerfile` accordingly if you have a different structure of repository.
 	
-###TODO###
+### TODO ###
 - Remove unnecessary qpOASES components (e.g. interface for Matlab) to shrink the size of the builder image.
